@@ -1,0 +1,79 @@
+/* NavBar.css */
+
+.navbar {
+    background-color: #f7f7f7; /* light gray background */
+    padding: 1rem; /* add some padding to the navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem; /* increase font size for logo */
+    font-weight: bold;
+    color: #333; /* dark gray color for logo */
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-links li {
+    margin-right: 20px; /* add some space between nav links */
+  }
+  
+  .nav-links a {
+    font-size: 1.2rem; /* increase font size for nav links */
+    color: #666; /* medium gray color for nav links */
+    text-decoration: none;
+  }
+  
+  .nav-links a:hover {
+    color: #333; /* dark gray color on hover */
+  }
+  
+  .menu-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  
+  .menu-toggle.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+  
+  .menu-toggle.bar:hover {
+    background-color: #666;
+  }
+  
+  .open.nav-links {
+    display: block;
+  }
+  
+  .open.menu-toggle.bar {
+    background-color: #666;
+  }
+  
+  /* add some responsive design for smaller screens */
+  @media (max-width: 768px) {
+   .nav-links {
+      flex-direction: column;
+      align-items: center;
+    }
+   .nav-links li {
+      margin-right: 0;
+    }
+   .nav-links a {
+      font-size: 1.5rem;
+    }
+  }

@@ -31,24 +31,26 @@ const Gallery = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-      {imageData.map((image) => (
-        <div
-          key={image.id}
-          className="group relative overflow-hidden rounded-lg shadow-lg"
-        >
-          <img
-            src={image.path}
-            alt={image.alt}
-            className="w-full h-full object-cover transition duration-300 transform group-hover:scale-110"
-          />
-          <div className="absolute inset-0 bg-gray-900 opacity-0 group-hover:opacity-70 transition duration-300">
-            <h3 className="text-white text-center text-lg font-semibold p-4">
-              {image.alt}
-            </h3>
+    <div className="px-4"> {/* Adding padding to the left and right */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {imageData.map((image) => (
+          <div
+            key={image.id}
+            className="group relative overflow-hidden rounded-lg shadow-lg"
+          >
+            <img
+              src={image.path}
+              alt={image.alt}
+              className="w-full h-full object-cover transition duration-300 transform group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gray-900 opacity-0 group-hover:opacity-70 transition duration-300">
+              <h3 className="text-white text-center text-lg font-semibold p-4">
+                {image.alt}
+              </h3>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };

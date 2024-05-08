@@ -1,5 +1,5 @@
 body {
-  background-color: #4a6741;
+  background-color: #747d62;
 }
 
 .separator {
@@ -7,3 +7,12 @@ body {
   border-top: 2px solid black;
   margin: 20px 0;
 }
+
+.nordic-h1 {
+  font-family: 'Open Sans', sans-serif, 'Times New Roman', Times, serif; /* Replace 'Open Sans' with your chosen font */
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 3rem;
+  padding-top: 5rem;
+}
+

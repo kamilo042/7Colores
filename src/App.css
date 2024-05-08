@@ -16,3 +16,7 @@ body {
   padding-top: 5rem;
 }
 
+@media (max-width: 768px) {
+  /* Styles for mobile navigation */
+}
+

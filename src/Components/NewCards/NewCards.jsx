@@ -30,7 +30,7 @@ const NewCards = () => {
   const imageGroups = createImageGroups(imageData);
 
   return (
-    <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
+    <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 pb-10">
       <Carousel indicators={false} arrows={true}>
         {imageGroups.map((group, index) => (
           <div key={index} className="carousel-item flex justify-center"> {/* Center images */}

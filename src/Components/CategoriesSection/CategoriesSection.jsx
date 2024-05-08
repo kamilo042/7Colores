@@ -13,7 +13,7 @@ const CategoriesSection = () => {
   ];
 
   return (
-    <div className="flex justify-center gap-8 place-content-center pt-10">
+    <div className="flex justify-center gap-8 place-content-center pt-10 pb-10">
       {cardData.map((card) => (
         <div
           key={card.id}
